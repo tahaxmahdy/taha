@@ -185,73 +185,86 @@
             margin-left: auto;
         }
         
-        /* Navbar */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: var(--navbar-bg);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            padding: 15px 0;
-            transition: var(--transition);
-            /* تحديد ارتفاع ثابت للـ Navbar */
-            height: var(--navbar-height);
-        }
-        
-        .navbar-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary-color);
-        }
-        
-        .logo-circle {
-            width: 40px;
-            height: 40px;
-            background-color: var(--primary-color);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            margin-right: 10px;
-            font-weight: 700;
-        }
-        
-        .nav-menu {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-item {
-            margin-left: 30px;
-        }
-        
-        .nav-link {
-            color: var(--text-white);
-            font-weight: 500;
-            transition: var(--transition);
-        }
-        
-        .nav-link:hover {
-            color: var(--secondary-color);
-        }
-        
-        .nav-controls {
-            display: flex;
-            align-items: center;
-        }
-        
+    /* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--navbar-bg);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 15px 0;
+    transition: var(--transition);
+    /* تحديد ارتفاع ثابت للـ Navbar */
+    height: var(--navbar-height);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.nav-link {
+    color: var(--text-white);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+}
+
+/* أيقونة اللغة */
+.lang-icon {
+    width: 24px;         /* حجم الأيقونة */
+    height: auto;
+    margin-left: 15px;   /* مسافة تبعدها عن أيقونة القائمة */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.lang-icon:hover {
+    transform: scale(1.1); /* حركة بسيطة عند الـ hover */
+}
+
         .theme-toggle, .lang-toggle {
             background: none;
             border: none;
@@ -1953,6 +1966,7 @@
     </script>
 </body>
 </html>
+
 
 
 
